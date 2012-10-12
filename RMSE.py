@@ -19,10 +19,10 @@ def RMSE_start() :
 
 
 def create_actual_database(actual, movies, users, prediction) :
-	for m_id in range (1, 17770) :
+	i = [0.0]
+	x = [0.0]
+	for m_id in range (1, 17771) :
 		m = str(m_id)
-		i = 0.0
-		x = 0.0
 		if m in movies :
 			print "Movie: " + m
 			file_name = "/u/downing/cs/netflix/training_set/mv_"+'%0*d' % (7, m_id)+".txt"
@@ -31,17 +31,17 @@ def create_actual_database(actual, movies, users, prediction) :
 				s = line.split(",")
 				if len(s) == 1 :
 					s = line.split(":")
-					actual[m] = 0
+					#actual[m] = 0
 					p = prediction[m]
 				else :
-					d = actual[m]
+					#d = actual[m]
 					user_id = s[0]
 					if user_id in users[int(m)] :
 						Arating = float(s[1])
 						Prating = p[user_id]
 						assert type(Prating) is float
-						x += sqre_diff(Arating, Prating)
-						i += 1
+						x[0] += sqre_diff(Arating, Prating)
+						i[0] += 1
 						"""
 						if d == 0 :
 							d = {user_id:Arating}
@@ -51,7 +51,7 @@ def create_actual_database(actual, movies, users, prediction) :
 							actual[m] = d
 							"""
 						
-	print x/i
+	print "RMSE = " + str(x[0]/i[0])
 	
 
 def create_prediction_database(prediction) :
