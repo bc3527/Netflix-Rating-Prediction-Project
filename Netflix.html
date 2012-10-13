@@ -1,0 +1,45 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Netflix</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Netflix</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/v/filer4b/v38q001/bc3527/Project_3_Netflix/Netflix.py">/v/filer4b/v38q001/bc3527/Project_3_Netflix/Netflix.py</a></font></td></tr></table>
+    <p><tt>#!/usr/bin/env&nbsp;python</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-netflix_average_rating"><strong>netflix_average_rating</strong></a>(user_cache)</dt><dd><tt>Returns&nbsp;the&nbsp;average&nbsp;overall&nbsp;rating&nbsp;made&nbsp;by&nbsp;any&nbsp;user<br>
+user_cache&nbsp;is&nbsp;a&nbsp;dictionary&nbsp;that&nbsp;contains&nbsp;the&nbsp;average&nbsp;of&nbsp;all&nbsp;user_cache&nbsp;ratings</tt></dd></dl>
+ <dl><dt><a name="-netflix_eval"><strong>netflix_eval</strong></a>(r, w, avg_rating, user_cache, movie_cache)</dt><dd><tt>reads&nbsp;input&nbsp;file&nbsp;and&nbsp;makes&nbsp;a&nbsp;predicted&nbsp;rating&nbsp;of&nbsp;movies<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;then&nbsp;writes&nbsp;them&nbsp;to&nbsp;a&nbsp;file<br>
+user_cache&nbsp;is&nbsp;a&nbsp;cache&nbsp;containing&nbsp;user_cache&nbsp;average&nbsp;rating<br>
+movie_cache&nbsp;is&nbsp;a&nbsp;cache&nbsp;containing&nbsp;average&nbsp;ratings&nbsp;for&nbsp;each&nbsp;movie<br>
+r&nbsp;is&nbsp;a&nbsp;reader<br>
+w&nbsp;is&nbsp;a&nbsp;writer<br>
+avg_rating&nbsp;is&nbsp;the&nbsp;overall&nbsp;average&nbsp;rating</tt></dd></dl>
+ <dl><dt><a name="-netflix_movie_cache"><strong>netflix_movie_cache</strong></a>(movie_cache)</dt><dd><tt>Creates&nbsp;a&nbsp;cache&nbsp;containing&nbsp;movies&nbsp;average&nbsp;ratings<br>
+movie_cache&nbsp;is&nbsp;a&nbsp;dictionary&nbsp;containing&nbsp;nothing&nbsp;at&nbsp;first&nbsp;and&nbsp;all&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;movie&nbsp;data&nbsp;at&nbsp;the&nbsp;end</tt></dd></dl>
+ <dl><dt><a name="-netflix_movie_offset"><strong>netflix_movie_offset</strong></a>(avg_rating, movie_rating)</dt><dd><tt>returns&nbsp;offset&nbsp;from&nbsp;overall&nbsp;average&nbsp;rating&nbsp;and&nbsp;this&nbsp;movies&nbsp;average&nbsp;rating<br>
+avg_rating&nbsp;is&nbsp;the&nbsp;overall&nbsp;average&nbsp;rating<br>
+movie_rating&nbsp;is&nbsp;the&nbsp;average&nbsp;rating&nbsp;for&nbsp;this&nbsp;movie</tt></dd></dl>
+ <dl><dt><a name="-netflix_start"><strong>netflix_start</strong></a>(r, w)</dt><dd><tt>calls&nbsp;methods&nbsp;to&nbsp;create&nbsp;average&nbsp;rating&nbsp;and&nbsp;creates&nbsp;user<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;movie&nbsp;caches&nbsp;from&nbsp;files&nbsp;then&nbsp;calls&nbsp;eval<br>
+r&nbsp;is&nbsp;a&nbsp;reader<br>
+w&nbsp;is&nbsp;a&nbsp;writer</tt></dd></dl>
+ <dl><dt><a name="-netflix_user_cache"><strong>netflix_user_cache</strong></a>(user_cache)</dt><dd><tt>Creates&nbsp;a&nbsp;cache&nbsp;containing&nbsp;users&nbsp;average&nbsp;ratings<br>
+user_cache&nbsp;is&nbsp;a&nbsp;dict&nbsp;containing&nbsp;nothing&nbsp;at&nbsp;first&nbsp;and&nbsp;all&nbsp;the&nbsp;avg&nbsp;user&nbsp;data&nbsp;at&nbsp;the&nbsp;end</tt></dd></dl>
+ <dl><dt><a name="-netflix_user_offset"><strong>netflix_user_offset</strong></a>(avg_rating, user_rating)</dt><dd><tt>returns&nbsp;offset&nbsp;from&nbsp;average&nbsp;user&nbsp;rating&nbsp;and&nbsp;this&nbsp;movies&nbsp;average&nbsp;rating<br>
+user_rating&nbsp;is&nbsp;the&nbsp;average&nbsp;rating&nbsp;for&nbsp;this&nbsp;user<br>
+movie_rating&nbsp;is&nbsp;the&nbsp;average&nbsp;rating&nbsp;for&nbsp;this&nbsp;movie</tt></dd></dl>
+</td></tr></table>
+</body></html>

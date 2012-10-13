@@ -6,11 +6,12 @@
 #	Brett Canino
 #	Instructor - Glenn Downing
 #	Cs 373
+#	Netflix.py
 
 # -------------
 # netflix_solve
 # -------------
-def netflix_solve (r, w) :
+def netflix_start (r, w) :
 	"""
 	calls methods to create average rating and creates user
 		and movie caches from files then calls eval

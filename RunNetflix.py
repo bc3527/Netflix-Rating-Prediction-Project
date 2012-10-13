@@ -4,6 +4,7 @@
 #	Brett Canino
 #	Instructor - Glenn Downing
 #	Cs 373
+#	RunNetflix.py
 
 # -------
 #	To run the program
@@ -27,4 +28,4 @@ from Netflix import netflix_solve
 # main
 # ----	
 
-netflix_solve(sys.stdin, sys.stdout)
+netflix_start(sys.stdin, sys.stdout)
